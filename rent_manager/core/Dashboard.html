@@ -1,0 +1,12 @@
+<h2>Rent Dashboard</h2>
+<p>Total Paid: KES {{ total_paid }}</p>
+<p>Total Unpaid: KES {{ total_unpaid }}</p>
+
+<h3>Overdue Tenants</h3>
+<ul>
+    {% for tenant in overdue_tenants %}
+        <li>{{ tenant.full_name }} - Phone: {{ tenant.phone }}</li>
+    {% empty %}
+        <li>No overdue payments</li>
+    {% endfor %}
+</ul>

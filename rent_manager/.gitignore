@@ -1,38 +1,23 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-media/
-staticfiles/
-*.pot
 *.pyc
-*.pyo
-*.pyd
 
-# Django migrations
-**/migrations/
-!*/migrations/__init__.py
+# Django
+db.sqlite3
+*.log
 
-# IDEs
-.vscode/
-.idea/
-
-# Env
-.env
+# Environments
+env/
 venv/
 ENV/
-env/
-.venv/
-*.env
 
-# OS files
+# VS Code
+.vscode/
+
+# System
 .DS_Store
 Thumbs.db
+
+# Secrets (optional)
+*.env
